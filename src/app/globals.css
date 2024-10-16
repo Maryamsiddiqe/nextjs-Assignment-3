@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure page takes full screen height and footer stays at the bottom */
+html, body {
+  height: 100%; /* Full height for body and html */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  flex: 1; /* Allow body to expand */
+}
+
+.main-content {
+  flex-grow: 1; /* Main content takes up remaining space */
+}
+
+/* Styles for parent div */
+.Parentdiv {
+  background-image: url('/images/background image.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Style for left pane */
+.leftpane {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(224, 102, 187);
+  border: 1px solid;
+}
+
+/* Style for right pane */
+.rightpane {
+  width: 200px;
+  height: 400px;
+  background-color: rgb(224, 102, 187);
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  color: aliceblue;
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text1, .text2 {
+  color: aliceblue;
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Consistent header */
+.header {
+  background-color: cadetblue;
+}
+
+/* Centered header buttons */
+.header-button {
+  display: flex;
+  font-size: large;
+  gap: 15px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Consistent footer */
+.footer {
+  background-color: cadetblue;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* Footer always stays at the bottom */
+}
+
+
+h1 {
+  font-size: 2rem; /* Adjust font size for h1 */
+  font-weight: bold; /* Bold the heading */
+  margin-bottom: 1rem; /* Add space below the heading */
+  color:black; /* Color for h1 */
+}
+
+p {
+  font-size: 1rem; /* Standard font size for paragraphs */
+  color:black; /* Gray color for paragraphs */
+  line-height: 1.6; /* Adjust line height for readability */
+}
